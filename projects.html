@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Task 4</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">💼 Projects</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="filter-section fade-in">
+    <h2>🛍 Product Showcase</h2>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search products..." onkeyup="filterProducts()" />
+      <select id="sortSelect" onchange="sortProducts()">
+        <option value="default">Sort by</option>
+        <option value="name">Name</option>
+        <option value="price">Price</option>
+      </select>
+    </div>
+    <div id="productList" class="grid"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 MyPortfolio | Dynamic Filtering & Sorting Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

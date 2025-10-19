@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Task 4</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">📬 Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact-section fade-in">
+    <h2>Let’s Connect</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <section class="todo-section fade-in">
+    <h2>📝 Notes (Saved in Local Storage)</h2>
+    <div class="todo-input">
+      <input type="text" id="noteInput" placeholder="Add a note..." />
+      <button onclick="addNote()" class="btn">➕ Add</button>
+    </div>
+    <ul id="noteList"></ul>
+  </section>
+
+  <footer>
+    <p>© 2025 MyPortfolio | Local Storage Notes</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
